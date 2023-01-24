@@ -2,11 +2,11 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-var licenseName = license.toLowerCase().split(' ').join('-');
+var licenseName = license.split(' ').join('-');
     if (license === 'No License') {
         return '';
     }
-    return `![license badge](https://img.shields.io/badge/license-${licenseName}-blue.svg)`
+    return `![license badge](https://img.shields.io/static/v1?label=license&message=${licenseName}&color=blue)`
 
 }
 // TODO: Create a function that returns the license link
