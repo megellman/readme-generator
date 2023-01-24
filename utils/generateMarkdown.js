@@ -2,10 +2,10 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-var licenseName = license.split(' ').join('-');
     if (license === 'No License') {
         return '';
     }
+    var licenseName = license.split(' ').join('-');
     return `![license badge](https://img.shields.io/static/v1?label=license&message=${licenseName}&color=blue)`
 
 }
@@ -15,9 +15,9 @@ function renderLicenseLink(license) {
     if (license === 'No License') {
         return `  ## Table of Contents
 
-        - [Installation](#installation)
-        - [Usage](#usage)
-        - [Credits](#credits)`
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)`
     } else {
         return `  ## Table of Contents
 
@@ -36,11 +36,11 @@ function renderLicenseSection(license) {
     }
     return `## License
   
-  This project is cover under the ${license} license. For more information please click [here](https://choosealicense.com/)`
+  This project is covered under the ${license} license. For more information please click [here](https://choosealicense.com/)`
 }
 
 function featuresSection(features) {
-    if (features != '') {
+    if (features !== '') {
         return `## Features
 ${features}`
     } else {
@@ -49,7 +49,7 @@ ${features}`
 }
 
 function contributeSection(contributing, contributingCustom){
-    if(contributing === 'Use the Contributor Convenant'){
+    if(contributing === 'Use the Contributor Covenant'){
 return `## How to Contribute
 [Contributor Covenant](https://www.contributor-covenant.org/)`
     }else if(contributing === 'Write my own contributing guidelines'){
@@ -59,6 +59,60 @@ ${contributingCustom}`
 return ''
     }
 }
+
+function collabSection(creditName, creditLink){
+    if(creditName == ''){
+        return ''
+    } else {
+        var names = creditName.split(', ');
+        var links = creditLink.split(', ');
+       var section = '';
+       names.forEach((names, index) => {
+        const link = links[index]
+        section += 
+`### ${names}
+[GitHub](${link})
+`;
+       });
+    }
+   return section
+}
+
+function creatorSection(creator, creatorLink){
+    if(creator == ''){
+        return ''
+    } else {
+    var creator = creator.split(', ');
+    var links = creatorLink.split(', ');
+   var section = '';
+   creator.forEach((creator, index) => {
+    const link = links[index]
+    section += 
+`### ${creator}
+- ${link}
+`;
+   });
+}
+   return section
+}
+
+function tutorialSection(tutorial, tutorialLink){
+    if(tutorial== ''){
+        return ''
+    } else {
+    var tutorial = tutorial.split(', ');
+    var links = tutorialLink.split(', ');
+   var section = '';
+   tutorial.forEach((tutorial, index) => {
+    const link = links[index]
+    section += `### ${tutorial}
+- ${link}
+`;
+   });
+}
+   return section
+}
+
 // TODO: Create a function to generate markdown for README
 //write this md file first for formatting 
 function generateMarkdown(response) {
@@ -67,11 +121,17 @@ ${renderLicenseBadge(response.license)}
     
 ## Description
     
-${response.description}
-    
+${response.what}
+
+${response.how}
+
+${response.why}
+
+${renderLicenseLink(response.license)}
+
 ## Installation
     
-${response.installation}
+${response.install}
     
 ## Usage
   
@@ -79,17 +139,28 @@ ${response.usage}
     
 ## Credits
     
-${response.creditCollab}
+${collabSection(response.creditName, response.creditLink)}
     
-${response.creditAsset}
-  
-${renderLicenseLink(response.license)}
+${creatorSection(response.creator, response.creatorLink)}
+
+${tutorialSection(response.tutorial, response.tutorialLink)}
     
 ${renderLicenseSection(response.license)}
 
 ${featuresSection(response.features)}
 
-${contributeSection(response.contributing, response.contributingCustom)}`;
+${contributeSection(response.contributing, response.contributingCustom)}
+
+## Tests
+
+${response.contribute}
+
+## Questions
+
+[GitHub](github.com/${response.username})
+
+If you have any additional questions, you can reach me at ${response.email}
+`;
     return markdown
 }
 

@@ -13,13 +13,24 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'What is your project about?',
-        name: 'description',
+        message: 'Briefly describe your project.',
+        name: 'what',
     },
     {
         type: 'input',
-        message: 'What are the steps required to install your project?',
-        name: 'installation',
+        message: 'How did you achieve this?',
+        name: 'how',
+    },
+    {
+        type: 'input',
+        message: 'Why did you create this project?',
+        name: 'why',
+    },
+    {
+        type: 'input',
+        message: 'What are the steps required to install your project? If there are none, leave blank.',
+        name: 'install',
+        default: '',
     },
     {
         type: 'input',
@@ -28,13 +39,39 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'If you collaborated with anyone, list their names and a link to their GitHub profiles. Format: Name - GitHub Profile Link',
-        name: 'creditCollab',
+        message: 'If you collaborated with anyone, list their names here. If you didn\'t, leave this blank. Format as: Name1, Name2, Name3',
+        name: 'creditName',
+        default: '',
     },
     {
         type: 'input',
-        message: 'List the third-party assets and link to their web presence. Format: Third-Party - Creator - Link',
-        name: 'creditAsset',
+        message: 'Link the collaborators\'s GitHub profiles here. Format as: GitHubURL1, GitHubURL2, GitHubURL3',
+        name: 'creditLink',
+        when: (response) => response.creditName !== '',
+    },
+    {
+        type: 'input',
+        message: 'If you used any third-party assets that require attribution, list the creators here. If you didn\'t, leave this blank. Format as: Creator1, Creator2, Creator3',
+        name: 'creator',
+        default: '',
+    },
+    {
+        type: 'input',
+        message: 'List the links to the creators\' web presences here. Format: Link1, Link2, Link3',
+        name: 'creatorLink',
+        when: (response) => response.creator !== '',
+    },
+    {
+        type: 'input',
+        message: 'If you followed any tutorials, list them here. If you didn\'t, leave this blank. Format as: Tutorial1, Tutorial2, Tutorial3',
+        name: 'tutorial',
+        default: '',
+    },
+    {
+        type: 'input',
+        message: 'List the links of the tutorials you followed. Format: Link1, Link2, Link3',
+        name: 'tutorialLink',
+        when: (response) => response.tutorial !== '',
     },
     {
         type: 'list',
@@ -48,6 +85,11 @@ const questions = [
         name: 'features',
     },
     {
+        type: 'input',
+        message: 'Please provide test instructions. If there are none, leave blank.',
+        name: 'contribute',
+    },
+    {
         type: 'list',
         message: 'How would you like other developers to contribute to this?',
         name: 'contributing',
@@ -58,6 +100,16 @@ const questions = [
         message: 'What guidelines do you have for contributing?',
         name: 'contributingCustom',
         when: (response) => response.contributing === 'Write my own contributing guidelines'
+    },
+    {
+        type: 'input',
+        message: 'What is your GitHub username?',
+        name: 'username',
+    },
+    {
+        type: 'input',
+        message: 'What is your email address?',
+        name: 'email',
     },
 ]
 
