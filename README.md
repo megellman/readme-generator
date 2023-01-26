@@ -25,26 +25,10 @@ Clone this repo to your local computer and run the index.js file.
 ## Usage
   
 This can be used to generate README.md files in the future. 
-    
-
-    
-
-    
-
-
-
-    
+      
 ## License
   
   This project is covered under the MIT license. For more information please click [here](https://choosealicense.com/)
-
-
-
-
-
-
-
-
 
 ## Questions
 
