@@ -9,6 +9,8 @@ Using Node.js and Inquirer, I created a prompt that asks a series of questions. 
 
 I created this project for two reasons. The first reason was to practice using Node.js and Inquirer. By completing this project, I have gained immense experience with both. The second reason was because README.md files tend to feel cumbersome to create, due to their repetitive nature. With this project, it is simple and efficient to create a profession README.md file.
 
+[Video Walk-through]( https://watch.screencastify.com/v/wdqNVqpkH79LwZvcJNz1)
+
   ## Table of Contents
 
 - [Installation](#installation)
