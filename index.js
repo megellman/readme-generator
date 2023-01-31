@@ -114,7 +114,7 @@ const questions = [
 
 // write README file
 function writeToFile(response) {
-    fs.writeFile('READMEsample.md', markdown(response), err => {
+    fs.writeFile('./dist/README.md', markdown(response), err => {
         err ? console.log(err) : console.log('Completed!')
     })
 }

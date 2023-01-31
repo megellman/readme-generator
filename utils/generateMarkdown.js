@@ -118,6 +118,14 @@ function tutorialSection(tutorial, tutorialLink){
 function generateMarkdown(response) {
     var markdown = `# ${response.title}
 ${renderLicenseBadge(response.license)}
+
+## Technology Used 
+
+| Technology Used         | Resource URL           | 
+| ------------- |:-------------:| 
+| HTML    | [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/HTML) |      |   
+| Git | [git-scm.com](https://git-scm.com/)     |    
+| Node.js | [nodejs.org/docs](https://nodejs.org/docs/latest-v16.x/api/) |
     
 ## Description
     
