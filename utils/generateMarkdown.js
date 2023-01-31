@@ -130,6 +130,8 @@ ${renderLicenseBadge(response.license)}
 | Node.js | [nodejs.org/docs](https://nodejs.org/docs/latest-v16.x/api/) |
     
 ## Description
+
+[Visit the Deployed Site](${response.deployed-link})
     
 ${response.what}
 
@@ -137,7 +139,17 @@ ${response.how}
 
 ${response.why}
 
+![Project Demo](${demo-gif})
+
 ${renderLicenseLink(response.license)}
+
+## Code Example
+
+```
+${response.example}
+```
+
+${response.example-info}
 
 ## Installation
     

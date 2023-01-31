@@ -11,6 +11,16 @@ const questions = [
     },
     {
         type: 'input',
+        message: 'Enter the link to your deployed site',
+        name: 'deployed-link',
+    },
+    {
+        type: 'input',
+        message: 'Enter the link to your demo gif.',
+        name: 'demo-gif',
+    },
+    {
+        type: 'input',
         message: 'Briefly describe your project.',
         name: 'what',
     },
@@ -23,6 +33,16 @@ const questions = [
         type: 'input',
         message: 'Why did you create this project?',
         name: 'why',
+    },
+    {
+        type: 'input',
+        message: 'Enter your example code here.',
+        name: 'example',
+    },
+    {
+        type: 'input',
+        message: 'How did you create this code? Why did you create this code? Why is it significant? What did you learn from it?',
+        name: 'example-info',
     },
     {
         type: 'input',
