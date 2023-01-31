@@ -15,16 +15,18 @@ function renderLicenseLink(license) {
     if (license === 'No License') {
         return `  ## Table of Contents
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)`
+        * [Installation](#installation)
+* [Usage](#usage)
+* [Author Info](#author-info)
+* [Credits](#credits)`
     } else {
         return `  ## Table of Contents
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)`
+        * [Installation](#installation)
+* [Usage](#usage)
+* [Author Info](#author-info)
+* [Credits](#credits)
+* [License](#license)`
     }
 }
 
@@ -144,6 +146,16 @@ ${response.install}
 ## Usage
   
 ${response.usage}
+
+## Author Info
+
+### Megan Ellman
+
+[LinkedIn](https://www.linkedin.com/in/megan-ellman/)
+
+[GitHub](https://github.com/megellman)
+
+[Portfolio](https://megellman.github.io/portfolio/)
     
 ## Credits
     
