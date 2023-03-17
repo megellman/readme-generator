@@ -1,5 +1,3 @@
-// var response = require('../index');
-// TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
     if (license === 'No License') {
@@ -9,20 +7,18 @@ function renderLicenseBadge(license) {
     return `![license badge](https://img.shields.io/static/v1?label=license&message=${licenseName}&color=blue)`
 
 }
-// TODO: Create a function that returns the license link
+
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
     if (license === 'No License') {
-        return `  ## Table of Contents
-
-        * [Installation](#installation)
+        return `## Table of Contents
+* [Installation](#installation)
 * [Usage](#usage)
 * [Author Info](#author-info)
 * [Credits](#credits)`
     } else {
-        return `  ## Table of Contents
-
-        * [Installation](#installation)
+        return `## Table of Contents
+* [Installation](#installation)
 * [Usage](#usage)
 * [Author Info](#author-info)
 * [Credits](#credits)
@@ -30,7 +26,6 @@ function renderLicenseLink(license) {
     }
 }
 
-// TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
     if (license === 'No License') {
@@ -115,7 +110,10 @@ function tutorialSection(tutorial, tutorialLink){
    return section
 }
 
-// TODO: Create a function to generate markdown for README
+function generateTech(response){
+    
+}
+
 //write this md file first for formatting 
 function generateMarkdown(response) {
     var markdown = `# ${response.title}
@@ -131,7 +129,7 @@ ${renderLicenseBadge(response.license)}
     
 ## Description
 
-[Visit the Deployed Site](${response.deployed-link})
+[Visit the Deployed Site](${response.deployedLink})
     
 ${response.what}
 
@@ -139,17 +137,17 @@ ${response.how}
 
 ${response.why}
 
-![Project Demo](${demo-gif})
+![Project Demo](${response.demoGif})
 
 ${renderLicenseLink(response.license)}
 
 ## Code Example
 
-```
-${response.example}
-```
 
-${response.example-info}
+${response.example}
+
+
+${response.exampleInfo}
 
 ## Installation
     

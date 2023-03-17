@@ -1,7 +1,8 @@
-
 const inquirer = require('inquirer');
 const fs = require('fs');
 var markdown = require('./utils/generateMarkdown');
+
+const tech = ['HTML', 'CSS', 'Git', 'Node.js', 'Express', 'Inquirer', 'jQuery', 'MySQL', 'Sequelize'];
 
 const questions = [
     {
@@ -12,12 +13,12 @@ const questions = [
     {
         type: 'input',
         message: 'Enter the link to your deployed site',
-        name: 'deployed-link',
+        name: 'deployedLink',
     },
     {
         type: 'input',
         message: 'Enter the link to your demo gif.',
-        name: 'demo-gif',
+        name: 'demoGif',
     },
     {
         type: 'input',
@@ -42,7 +43,7 @@ const questions = [
     {
         type: 'input',
         message: 'How did you create this code? Why did you create this code? Why is it significant? What did you learn from it?',
-        name: 'example-info',
+        name: 'exampleInfo',
     },
     {
         type: 'input',

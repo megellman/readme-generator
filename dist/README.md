@@ -1,20 +1,40 @@
-# Note Taker
-![license badge](https://img.shields.io/static/v1?label=license&message=MIT&color=blue)
+# Test Project
+![license badge](https://img.shields.io/static/v1?label=license&message=Apache-License-2.0&color=blue)
+
+## Technology Used 
+
+| Technology Used         | Resource URL           | 
+| ------------- |:-------------:| 
+| HTML    | [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/HTML) |      |   
+| Git | [git-scm.com](https://git-scm.com/)     |    
+| Node.js | [nodejs.org/docs](https://nodejs.org/docs/latest-v16.x/api/) |
     
 ## Description
+
+[Visit the Deployed Site](link.here.com)
     
-This project is a note application. When a user opens the application, they are presented with a hoempage with a begin button. When they click the begin button, they are lead to a page with their previous notes on the left-hand side and an option to create new notes on the right-hand side. When a user enters in a title and text, then a save button appears in the upper-right corner. When the save button is clicked, the note is added to the other saved notes on the left-hand side. There is also a trash icon on the note that allows a user to delete a note as well.
+This project is about....
 
-This project was created using Node.js and deployed with Heroku.
+I achieved this project by doing...
 
-I created this project to gain exerience with Express.js and Heroku. This project helped me to understand the relationship between the frontend and the backend and how those two communicate with each other.
+I created this project in order to...
 
-  ## Table of Contents
+![Project Demo](demo.link)
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
+## Table of Contents
+* [Installation](#installation)
+* [Usage](#usage)
+* [Author Info](#author-info)
+* [Credits](#credits)
+* [License](#license)
+
+## Code Example
+
+
+code here
+
+
+I created this code because...
 
 ## Installation
     
@@ -22,25 +42,34 @@ I created this project to gain exerience with Express.js and Heroku. This projec
     
 ## Usage
   
-This project can be used for saving and referrencing notes.
+This project can be used as...
+
+## Author Info
+
+### Megan Ellman
+
+[LinkedIn](https://www.linkedin.com/in/megan-ellman/)
+
+[GitHub](https://github.com/megellman)
+
+[Portfolio](https://megellman.github.io/portfolio/)
     
 ## Credits
     
 
     
-### Heroku Docs
-- https://devcenter.heroku.com/categories/reference
 
 
 
     
 ## License
   
-  This project is covered under the MIT license. For more information please click [here](https://choosealicense.com/)
+  This project is covered under the Apache License 2.0 license. For more information please click [here](https://choosealicense.com/)
 
 
 
-
+## How to Contribute
+[Contributor Covenant](https://www.contributor-covenant.org/)
 
 ## Tests
 
@@ -48,6 +77,6 @@ This project can be used for saving and referrencing notes.
 
 ## Questions
 
-[GitHub](github.com/megellman)
+[GitHub](github.com/megellman.github)
 
-If you have any additional questions, you can reach me at meganlellman@gmail.com
+If you have any additional questions, you can reach me at megan@emmail

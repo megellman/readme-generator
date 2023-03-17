@@ -9,29 +9,35 @@ Using Node.js and Inquirer, I created a prompt that asks a series of questions. 
 
 I created this project for two reasons. The first reason was to practice using Node.js and Inquirer. By completing this project, I have gained immense experience with both. The second reason was because README.md files tend to feel cumbersome to create, due to their repetitive nature. With this project, it is simple and efficient to create a profession README.md file.
 
-[Video Walk-through]( https://watch.screencastify.com/v/wdqNVqpkH79LwZvcJNz1)
+[Video Walk-through](https://watch.screencastify.com/v/h2xQbsRv7VjgnCGISMLv)
 
   ## Table of Contents
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
+- [README Generator](#readme-generator)
+  - [Description](#description)
+  - [Table of Contents](#table-of-contents)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Credits](#credits)
+    - [Inquirer](#inquirer)
+    - [Node.js](#nodejs)
+  - [License](#license)
+  - [Questions](#questions)
 
 ## Installation
     
-Clone this repo to your local computer and run the index.js file.
+Clone this repo to your local computer. Run the node index.js.
     
 ## Usage
   
-This can be used to generate README.md files in the future. 
-      
+This can be used to generate README.md files for future GitHub projects. A user can either answer the questions as they are presented in the terminal to produce a completed, professional README.md, or they use this generator to generate a README.md template for later use. 
 
 ## Credits
 ### Inquirer 
-- [npmjs.com](https://www.npmjs.com/package/inquirer)
+* [npmjs.com](https://www.npmjs.com/package/inquirer)
 ### Node.js
-- [nodejs.org](https://nodejs.org/docs/latest-v16.x/api/)
+* [nodejs.org](https://nodejs.org/docs/latest-v16.x/api/)
+
 ## License
   
   This project is covered under the MIT license. For more information please click [here](https://choosealicense.com/)
